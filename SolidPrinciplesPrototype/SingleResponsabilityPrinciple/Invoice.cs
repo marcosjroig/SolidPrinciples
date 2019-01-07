@@ -1,4 +1,4 @@
-﻿namespace SolidPrinciplesPrototype._1SingleResponsabilityPrinciple
+﻿namespace SolidPrinciplesPrototype.SingleResponsabilityPrinciple
 {
     /// <summary>
     /// This class shows the a Single Reponsability Principle violation.

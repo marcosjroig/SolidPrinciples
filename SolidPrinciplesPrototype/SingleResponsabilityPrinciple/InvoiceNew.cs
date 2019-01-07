@@ -1,4 +1,4 @@
-﻿namespace SolidPrinciplesPrototype._1SingleResponsabilityPrinciple
+﻿namespace SolidPrinciplesPrototype.SingleResponsabilityPrinciple
 {
     public class InvoiceNew
     {
