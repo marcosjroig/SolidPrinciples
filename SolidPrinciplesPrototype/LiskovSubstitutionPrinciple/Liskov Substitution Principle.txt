@@ -1,0 +1,2 @@
+﻿When code depends on Class/Interface X, any substitute of X should be entery valid in the same context.
+i.e. implementations can be substituted

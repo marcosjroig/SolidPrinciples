@@ -1,0 +1,3 @@
+﻿Classes should not depend on each other directly. 
+
+So reducing coupling between classes by intrucing abstractions (think of interfaces) between them.

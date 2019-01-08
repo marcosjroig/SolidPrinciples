@@ -1,0 +1,1 @@
+﻿No client should be forced to depends on methods it does not use.
