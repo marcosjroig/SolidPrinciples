@@ -1,3 +1,6 @@
 ﻿Classes should not depend on each other directly. 
 
 So reducing coupling between classes by intrucing abstractions (think of interfaces) between them.
+
+This principle could be rephrased as use the same level of abstraction at a given level. Interfaces should depend on other interfaces. 
+Don’t add concrete classes to method signatures of an interface.

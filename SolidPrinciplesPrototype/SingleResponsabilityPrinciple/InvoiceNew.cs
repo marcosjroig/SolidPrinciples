@@ -1,6 +1,11 @@
 ﻿namespace SolidPrinciplesPrototype.SingleResponsabilityPrinciple
 {
-    public class InvoiceNew
+    public interface IInvoice
+    {
+        decimal CalculateTotal();
+    }
+
+    public class InvoiceNew: IInvoice
     {
         public decimal CalculateTotal()
         {
@@ -13,11 +18,11 @@
 
     public interface IInvoiceStore // Deals with persisting invoices, this can know about database structure
     {
-        void StoreInvoiceDetails(InvoiceNew invoice);
+        void StoreInvoiceDetails(IInvoice invoice);
     }
 
     public interface IInvoicePrinter // Deals with printing invoices in whichever format our users want
     {
-        void PrintInvoice(InvoiceNew invoice);
+        void PrintInvoice(IInvoice invoice);
     }
 }

@@ -46,7 +46,6 @@
 
         public void Persist(object _object)
         {
-            // HistoricStockPriceRepository cannot persist data so we use this if
             if (_dataWriteRepository != null)
             {
                 _dataWriteRepository.Persist(_object);

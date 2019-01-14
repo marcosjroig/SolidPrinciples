@@ -1,1 +1,4 @@
 ﻿No client should be forced to depends on methods it does not use.
+
+Interface Segregation Principle or ISP states that many client-specific interfaces are better than one general-purpose interface. 
+In other words, you should not have to implement methods that you don’t use.

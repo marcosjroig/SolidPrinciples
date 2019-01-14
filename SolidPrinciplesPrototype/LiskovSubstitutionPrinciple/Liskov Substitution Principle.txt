@@ -1,2 +1,5 @@
-﻿When code depends on Class/Interface X, any substitute of X should be entery valid in the same context.
+﻿Liskov Substitution Principle or LSP states that:
+
+"objects in a program should be replaceable with instances of their subtypes without altering the correctness of the program"
+
 i.e. implementations can be substituted

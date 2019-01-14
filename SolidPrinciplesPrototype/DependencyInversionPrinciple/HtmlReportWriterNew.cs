@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
-
-namespace SolidPrinciplesPrototype.DependencyInversionPrinciple
+﻿namespace SolidPrinciplesPrototype.DependencyInversionPrinciple
 {
+    public interface IReport { }
+
+    public class ReportNew : IReport
+    {
+
+    }
+
     public interface IReportWriter
     {
-        void WriteReport(Report report);
+        void WriteReport(IReport report);
     }
 
     public class HtmlReportWriterNew: IReportWriter
     {
-        public void WriteReport(Report report)
+        public void WriteReport(IReport report)
         {
             // Generate Html file containing report data
         }
@@ -20,7 +22,7 @@ namespace SolidPrinciplesPrototype.DependencyInversionPrinciple
 
     public class CsvReportWriter: IReportWriter
     {
-        public void WriteReport(Report report)
+        public void WriteReport(IReport report)
         {
             // Generate CSV file containing report data
         }
